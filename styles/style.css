@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+.toTop {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.wrapperPage {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/space.png) no-repeat top center/contain;
+    background-color: #b0c4de;
+    position: relative;
+    overflow: hidden;
+}
+.spaceman, .spaceman2 {
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+.spaceman {
+    animation: float1 12s infinite ease-in-out alternate;
+    top: 20%;
+    left: 10%;
+}
+.spaceman2 {
+    animation: float2 10s infinite ease-in-out alternate;
+    top: 60%;
+    left: 70%;
+}
+@keyframes float1 {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(200px, -100px); }
+    50% { transform: translate(-100px, 100px); }
+    75% { transform: translate(240px, 160px); }
+    100% { transform: translate(0, 0); }
+}
+@keyframes float2 {
+    0% { transform: translate(0, 0); }
+    20% { transform: translate(-80px, -30px); }
+    40% { transform: translate(60px, 50px); }
+    60% { transform: translate(-100px, 70px); }
+    80% { transform: translate(30px, -60px); }
+    100% { transform: translate(0, 0); }
+}
+.rocket {
+    position: absolute;
+    width: 250px;
+    top: 100%;
+    right: -300px;
+    animation: rocketFly 4s linear infinite;
+    z-index: 1;
+}
+@keyframes rocketFly {
+    0% {
+        transform: translate(0, 0) rotate(345deg);
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-120vw, -120vh) rotate(345deg);
+        opacity: 0;
+    }
+}
+.wrapperPage p{
+    font-family: 'DotGothic16';
+    writing-mode: vertical-rl;
+    position: absolute;
+}
+.welcome{
+    font-size: 6rem;
+    top: 10%;
+    right: 15%;
+}
+.click{
+    font-size: 4.5rem;
+    top: 8%;
+    left: 15%;
+}
+
+
+@media screen and (max-width: 768px){
+    .wrapperPage {
+        background-position: center center;
+    }
+    .welcome{
+        top: 20%;
+    }
+    .click{
+        top: 15%;
+    }
+    .spaceman,.spaceman2{
+        width: 130px;
+    }
+    .rocket{
+        right: 18%;
+    }
+    @keyframes rocketFly {
+        0%{
+            transform: translateY(0) rotate(43deg);
+        }
+        70%{
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(-120vh) rotate(43deg);
+            opacity: 0;
+        }
+    }
+}
