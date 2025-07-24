@@ -9,125 +9,126 @@
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">    <link href="styles/style.css" rel="stylesheet">
     <title>Portfolio|Profile</title>
     </head>
-    <body>
+    <body id="profileTop">
         <div class="loading" id="loading">
             <div class="loading_logo"><img src="images/wertel.png" alt=""></div>
         </div>
-        <div id="wrapper">
-            <header class="header">
-                <nav class="pc_nav" id="pc_nav">
+        <div id="wrapper"></div>
+        <header class="header">
+            <nav class="pc_nav" id="pc_nav">
+                <ul>
+                    <li><a href="topPage.html">Home</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="works.html">Works</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="profile" id="profile">
+            <div class="hamburger" id="open_nav">
+                <img src="images/three.png" alt="">
+            </div>
+            <h2>Profile</h2>
+            <h3>Intoduction</h3>
+            <div class="mySelf">
+                <p><img src="images/myphoto.jpg" alt=""></p>
+                <div class="mySelfR">
+                    <div class="me">
+                        <p>name：佐藤結花</p>
+                        <p>born：1999/09/24</p>
+                        <p>hoby：読書、散歩、一人旅行</p>
+                    </div>
+                    <div class="skill">
+                        <div><h3>My Skills</h3></div>
+                        <dl>
+                            <div><dt>・2018/9&emsp;</dt><dd>TOEIC公開テスト&ensp;780点取得</dd></div>
+                            <div><dt>・2021/1&emsp;</dt><dd>普通自動車第一種運転免許取得</dd></div>
+                            <div><dt>・2025/3&emsp;</dt><dd>ITパスポート試験合格</dd></div>
+                            <div><dt>・2025/5&emsp;</dt><dd>HTML5プロフェッショナル認定試験 レベル1取得</dd></div>
+                            <div><dt>・2025/6&emsp;</dt><dd>HTML5プロフェッショナル認定試験 レベル2取得予定</dd></div>
+                            <div><dt>・2025/8&emsp;</dt><dd>PHP8技術者認定初級試験取得予定</dd></div>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="plan">
+                <div class="h3">
+                    <div class="planImg"><img src="images/goal.png" alt=""></div>
+                    <div class="planImg2"><img src="images/goalspot.png" alt=""></div>
+                    <h3>Learning Plan &lt;2025/3~9&gt;</h3>
+                </div>
+                <div class="h5"><h5>HTML、CSS、JavaScript、PHPの4言語を最大限に習得することを目標にしました。</h5></div>
+                <h4>入学前</h4>
+                <ul>
+                    <li>完全未経験のため、専門用語理解の土台として「ITパスポート」学習を開始</li>
+                </ul>
+                <p class="arrow"><img src="images/downArrow.png" alt=""></p>
+                <h4>入学後</h4>
+                <ul>
+                    <li>ITパスポート 合格（言語学習前）</li>
+                    <li>資格学習を通じて「学習範囲の広がり」「スケール管理」の重要性を実感</li>
+                    <li>授業スケジュールに沿って、各言語に関連する資格取得を計画</li>
+                </ul>
+                <p class="arrow"><img src="images/downArrow.png" alt=""></p>
+                <h4>学習の進め方</h4>
+                <h6>▶ 各言語の授業期間</h6>
+                <ul>
+                    <li>通学中に授業の予習を欠かさず実施</li>
+                    <li>自宅では授業内容の復習＋模写サイト制作でアウトプット重視</li>
+                </ul>
+                <h6>▶ 各制作期間</h6>
+                <ul>
+                    <li>課題は授業内で効率よく完了（授業中のアウトプットが活きる）</li>
+                    <div class="api-ruText">
+                        <div class="point"><img src="images/point.png" alt=""></div>
+                        <p class="api-ru">技術職経験により「納期内の最大パフォーマンス力」を活かす。</p>
+                        <p class="api-ru">制作物を常に客観視し、「理想と現実の差」を理解し行動に反映。</p>
+                    </div>
+                    <li>通学時間・自宅時間を活用して資格学習（テキスト・過去問）</li>
+                </ul>
+                <p class="hot">
+                    **アウトプットの時間を意識的に確保**し、「資格だけの人」で終わらず<br>
+                    **習得そのもの**を目的に、インプットとのバランスを常に意識。
+                </p>
+                <p class="arrow"><img src="images/downArrow.png" alt=""></p>
+                <h4>現時点での学び &lt;2025/6/23&gt;</h4>
+                <dl>
+                    <dt>&#128994; HTML/CSS</dt>
+                    <dd>カンプ再現も難なく対応可能。<mark>セマンティックな構造で書ける。</mark></dd>
+                    <dt>&#128993; JavaScript</dt>
+                    <dd>
+                        基本的なオブジェクトを理解し、シンプルな実装は自力で対応可。<br>
+                        <mark>スライダーや計算機はChatGPTの補助で実装経験あり。</mark><br>
+                        APIの実装は現在学習中。
+                    </dd>
+                    <dt>&#128308; PHP</dt>
+                    <dd>
+                        入門編のテキストをインプットし、架空ECサイトを制作中。<br>
+                        データベースと連携し、商品や顧客の情報を管理し実装。<br>
+                        サーバー環境でも動作するように開発中。<br>
+                        また、当サイトのコンタクトフォームが実現できるよう計画中。
+                    </dd>
+                </dl>
+            </div>
+        </main>
+        <footer>
+            <div class="footerWrap">
+                <div class="cat"><img src="images/blackcat.png" alt=""></div>
+                <nav>
                     <ul>
-                        <li><a href="topPage.html">Home</a></li>
-                        <li><a href="#profile">Profile</a></li>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="profile.html">Profile</a></li>
                         <li><a href="history.html">History</a></li>
                         <li><a href="works.html">Works</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
-            </header>
-            <main class="profile" id="profile">
-                <div class="hamburger" id="open_nav">
-                    <img src="images/three.png" alt="">
-                </div>
-                <h2>Profile</h2>
-                <h3>Intoduction</h3>
-                <div class="mySelf">
-                    <p><img src="images/myphoto.jpg" alt=""></p>
-                    <div class="mySelfR">
-                        <div class="me">
-                            <p>name：佐藤結花</p>
-                            <p>born：1999/09/24</p>
-                            <p>hoby：読書、散歩、一人旅行</p>
-                        </div>
-                        <div class="skill">
-                            <div><h3>My Skills</h3></div>
-                            <dl>
-                                <div><dt>・2018/9&emsp;</dt><dd>TOEICk公開テスト&ensp;780点取得</dd></div>
-                                <div><dt>・2021/1&emsp;</dt><dd>普通自動車第一種運転免許取得</dd></div>
-                                <div><dt>・2025/3&emsp;</dt><dd>ITパスポート試験合格</dd></div>
-                                <div><dt>・2025/5&emsp;</dt><dd>HTML5プロフェッショナル認定試験 レベル1取得</dd></div>
-                                <div><dt>・2025/6&emsp;</dt><dd>HTML5プロフェッショナル認定試験 レベル2取得予定</dd></div>
-                                <div><dt>・2025/8&emsp;</dt><dd>PHP8技術者認定初級試験取得予定</dd></div>
-                            </dl>
-                        </div>
-                    </div>
-                </div>
-                <div class="plan">
-                    <div class="h3">
-                        <div class="planImg"><img src="images/goal.png" alt=""></div>
-                        <div class="planImg2"><img src="images/goalspot.png" alt=""></div>
-                        <h3>Learning Plan &lt;2025/3~9&gt;</h3>
-                    </div>
-                    <div class="h5"><h5>HTML、CSS、JavaScript、PHPの4言語を最大限に習得することを目標にしました。</h5></div>
-                    <h4>入学前</h4>
-                    <ul>
-                        <li>完全未経験のため、専門用語理解の土台として「ITパスポート」学習を開始</li>
-                    </ul>
-                    <p class="arrow"><img src="images/downArrow.png" alt=""></p>
-                    <h4>入学後</h4>
-                    <ul>
-                        <li>ITパスポート 合格（言語学習前）</li>
-                        <li>資格学習を通じて「学習範囲の広がり」「スケール管理」の重要性を実感</li>
-                        <li>授業スケジュールに沿って、各言語に関連する資格取得を計画</li>
-                    </ul>
-                    <p class="arrow"><img src="images/downArrow.png" alt=""></p>
-                    <h4>学習の進め方</h4>
-                    <h6>▶ 各言語の授業期間</h6>
-                    <ul>
-                        <li>通学中に授業の予習を欠かさず実施</li>
-                        <li>自宅では授業内容の復習＋模写サイト制作でアウトプット重視</li>
-                    </ul>
-                    <h6>▶ 各制作期間</h6>
-                    <ul>
-                        <li>課題は授業内で効率よく完了（授業中のアウトプットが活きる）</li>
-                        <div class="api-ruText">
-                            <div class="point"><img src="images/point.png" alt=""></div>
-                            <p class="api-ru">技術職経験により「納期内の最大パフォーマンス力」を活かす。</p>
-                            <p class="api-ru">制作物を常に客観視し、「理想と現実の差」を理解し行動に反映。</p>
-                        </div>
-                        <li>通学時間・自宅時間を活用して資格学習（テキスト・過去問）</li>
-                    </ul>
-                    <p class="hot">
-                        **アウトプットの時間を意識的に確保**し、「資格だけの人」で終わらず<br>
-                        **習得そのもの**を目的に、インプットとのバランスを常に意識。
-                    </p>
-                    <p class="arrow"><img src="images/downArrow.png" alt=""></p>
-                    <h4>現時点での学び &lt;2025/6/23&gt;</h4>
-                    <dl>
-                        <dt>&#128994; HTML/CSS</dt>
-                        <dd>カンプ再現も難なく対応可能。<mark>セマンティックな構造で書ける。</mark></dd>
-                        <dt>&#128993; JavaScript</dt>
-                        <dd>
-                            基本的なオブジェクトを理解し、シンプルな実装は自力で対応可。<br>
-                            <mark>スライダーや計算機はChatGPTの補助で実装経験あり。</mark><br>
-                            APIの実装は現在学習中。
-                        </dd>
-                        <dt>&#128308; PHP</dt>
-                        <dd>
-                            未学習<br>
-                            JavaScriptと組み合わせることでフォームの実装や、APIKeyを使った<br>
-                            天気予報など、アプリケーションを作ろうと計画中。
-                        </dd>
-                    </dl>
-                </div>
-            </main>
-            <footer>
-                <div class="footerWrap">
-                    <div class="cat"><img src="images/blackcat.png" alt=""></div>
-                    <nav>
-                        <ul>
-                            <li><a href="#header">Home</a></li>
-                            <li><a href="profile.html">Profile</a></li>
-                            <li><a href="history.html">History</a></li>
-                            <li><a href="works.html">Works</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <p class="small"><small>&copy;YuukaSatou/Portfolio/2025</small></p>
-            </footer>
-            <a href="../index.html" class="toSpace"><img src="images/saturn.png" alt=""></a>
-        </div>
+            </div>
+            <p class="small"><small>&copy;YuukaSatou/Portfolio/2025</small></p>
+        </footer>
+        <a href="#profileTop" class="toTop"><img src="images/toTop.png" alt=""></a>
+        <a href="../index.html" class="toSpace"><img src="images/saturn.png" alt=""></a>
         <nav id="nav">
             <div class="logo">
                 <img src="images/ashes.png" alt="">
